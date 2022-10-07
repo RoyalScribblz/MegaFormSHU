@@ -390,5 +390,157 @@ namespace FirstTime
             MessageBox.Show($"Your name is {name}");
             MessageBox.Show($"Your town is {town}");
         }
+        
+        private void MinutesAndSeconds_Click(object sender, EventArgs e)
+        {
+            // Gets Minutes
+            int total = GetValueMinutes("minutes") * 60;
+            // Gets Seconds
+            total = total + GetValueMinutes("seconds");
+            MessageBox.Show("The total number of seconds is: " + Convert.ToString(total));
+        }
+
+        private static int GetValueMinutes(string type)
+        {
+            // getValue
+            int reply = Convert.ToInt16(My_Dialogs.InputBox("type " + type));
+            while (reply is < 0 or > 59)
+            {
+                MessageBox.Show("Wrong");
+                reply = Convert.ToInt32(
+                My_Dialogs.InputBox("Value must be between 0 and 59"));
+            }
+            return reply;
+        }
+
+        private void MinutesSecondsHoursMethod_Click(object sender, EventArgs e)
+        {
+            // Gets Minutes
+            int total = GetValueHours("minutes") * 60;
+            // Gets Seconds
+            total += GetValueHours("seconds");
+            // Gets Hours
+            total += GetValueHours("hours") * 60 * 60;
+            MessageBox.Show("The total number of seconds is: " + Convert.ToString(total));
+        }
+
+        private static int GetValueHours(string type)
+        {
+            // getValue
+            int reply = Convert.ToInt16(My_Dialogs.InputBox("type " + type));
+            int maxSize = 59;
+            if (type == "hours") maxSize = 23;
+            while (reply < 0 || reply > maxSize)
+            {
+                MessageBox.Show("Wrong");
+                reply = Convert.ToInt32(
+                My_Dialogs.InputBox("Value must be between 0 and 59"));
+            }
+            return reply;
+        }
+
+        private void RectangleTriangleSize_Click(object sender, EventArgs e)
+        {
+            string calc;
+            do
+            {
+                string shape = GetShape();
+
+                double area = shape == "rectangle" ? AreaRectangle() : AreaTriangle();
+                MessageBox.Show("Area is " + area);
+                calc = My_Dialogs.InputBox("Do you want to calculate area again? (y/n)");
+            } while (calc is "y" or "");
+        }
+
+        private static string GetShape()
+        {
+            string inp;
+            do
+            {
+                inp = My_Dialogs.InputBox("Input shape type:");
+            } while (inp is not ("rectangle" or "triangle"));
+            return inp;
+        }
+
+        private static double AreaTriangle()
+        {
+            double itsBase = Convert.ToDouble(My_Dialogs.InputBox("Enter base:"));
+            double itsHeight = Convert.ToDouble(My_Dialogs.InputBox("Enter height:"));
+
+            return 0.5 * itsBase * itsHeight;
+        }
+
+        private static double AreaRectangle()
+        {
+            double itsWidth = Convert.ToDouble(My_Dialogs.InputBox("Enter width:"));
+            double itsHeight = Convert.ToDouble(My_Dialogs.InputBox("Enter height:"));
+
+            return itsWidth * itsHeight;
+        }
+
+        private void ReadValueDouble_Click(object sender, EventArgs e)
+        {
+            double limit = Convert.ToDouble(My_Dialogs.InputBox("Enter a limit:"));
+            string prompt = My_Dialogs.InputBox("Enter a prompt:");
+            double returnValue = ReadValueAndReturn(limit, prompt);
+            MessageBox.Show(Convert.ToString(returnValue));
+        }
+
+        private static double ReadValueAndReturn(double limit, string prompt)
+        {
+            double userReply = Convert.ToDouble(My_Dialogs.InputBox("Type " + prompt + ":"));
+            while ((userReply < 0) || (userReply > limit))
+            {
+                MessageBox.Show(prompt + " Too Big! – Try Again");
+                userReply = Convert.ToDouble(My_Dialogs.InputBox("Type " + prompt + ":"));
+            }
+            return userReply;
+        }
+
+        private static int ReadValue(double limit, string prompt)
+        {
+            int userReply = Convert.ToInt32(My_Dialogs.InputBox("Type " + prompt + ":"));
+            while ((userReply < 0) || (userReply > limit))
+            {
+                MessageBox.Show(prompt + " Too Big! – Try Again");
+                userReply = Convert.ToInt32(My_Dialogs.InputBox("Type " + prompt + ":"));
+            }
+            return userReply;
+        }
+
+        private void TotalMarks_Click(object sender, EventArgs e)
+        {
+            int mark1 = ReadValue(100, "First Mark");
+            int mark2 = ReadValue(100, "Second Mark");
+            int total = TotalMark(mark1, mark2);
+            MessageBox.Show(total.ToString());
+        }
+
+        private static int TotalMark(int mark1, int mark2)
+        {
+            return (int)(mark1 * 0.4 + mark2 * 0.6);
+        }
+
+        private void SmallerNumber2_Click(object sender, EventArgs e)
+        {
+            int smaller = GetSmallerInt(7, 2);
+            MessageBox.Show(smaller.ToString());
+        }
+
+        private static int GetSmallerInt(int num1, int num2)
+        {
+            return num1 < num2 ? num1 : num2;
+        }
+
+        private void SmallerOfThree_Click(object sender, EventArgs e)
+        {
+            int smaller = GetSmallerOfThree(1, 5, 2);
+            MessageBox.Show(smaller.ToString());
+        }
+
+        private static int GetSmallerOfThree(int num1, int num2, int num3)
+        {
+            return GetSmallerInt(GetSmallerInt(num1, num2), num3);
+        }
     }
 }
