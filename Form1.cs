@@ -364,7 +364,7 @@ namespace FirstTime
             NameAndTown();
         }
 
-        private void NameAndTown()
+        private static void NameAndTown()
         {
             string name = My_Dialogs.InputBox("Enter your name:");
             string town = My_Dialogs.InputBox("Enter your town:");
