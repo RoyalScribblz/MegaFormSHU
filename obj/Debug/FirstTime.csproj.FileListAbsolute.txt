@@ -1,0 +1,22 @@
+C:\Users\c2078042\source\repos\FirstTime\bin\Debug\FirstTime.exe.config
+C:\Users\c2078042\source\repos\FirstTime\bin\Debug\FirstTime.exe
+C:\Users\c2078042\source\repos\FirstTime\bin\Debug\FirstTime.pdb
+C:\Users\c2078042\source\repos\FirstTime\obj\Debug\FirstTime.csproj.AssemblyReference.cache
+C:\Users\c2078042\source\repos\FirstTime\obj\Debug\FirstTime.csproj.SuggestedBindingRedirects.cache
+C:\Users\c2078042\source\repos\FirstTime\obj\Debug\FirstTime.mainWindow.resources
+C:\Users\c2078042\source\repos\FirstTime\obj\Debug\FirstTime.Properties.Resources.resources
+C:\Users\c2078042\source\repos\FirstTime\obj\Debug\FirstTime.csproj.GenerateResource.cache
+C:\Users\c2078042\source\repos\FirstTime\obj\Debug\FirstTime.csproj.CoreCompileInputs.cache
+C:\Users\c2078042\source\repos\FirstTime\obj\Debug\FirstTime.exe
+C:\Users\c2078042\source\repos\FirstTime\obj\Debug\FirstTime.pdb
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\bin\Debug\FirstTime.exe.config
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\bin\Debug\FirstTime.exe
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\bin\Debug\FirstTime.pdb
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\obj\Debug\FirstTime.csproj.AssemblyReference.cache
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\obj\Debug\FirstTime.csproj.SuggestedBindingRedirects.cache
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\obj\Debug\FirstTime.mainWindow.resources
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\obj\Debug\FirstTime.Properties.Resources.resources
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\obj\Debug\FirstTime.csproj.GenerateResource.cache
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\obj\Debug\FirstTime.csproj.CoreCompileInputs.cache
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\obj\Debug\FirstTime.exe
+C:\Work\jlloyd\University Work\c# Projects\FirstTime\obj\Debug\FirstTime.pdb
