@@ -1,7 +1,6 @@
 ﻿using MyDialogs;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -29,19 +28,17 @@ namespace FirstTime
 
         private void btn_Seconds_Click(object sender, EventArgs e)
         {
-            string hours, minutes, seconds;
-            int result;
             // get hours from user
-            hours = My_Dialogs.InputBox("Enter hours:");
+            string hours = My_Dialogs.InputBox("Enter hours:");
 
             // get minutes from user
-            minutes = My_Dialogs.InputBox("Enter minutes:");
+            string minutes = My_Dialogs.InputBox("Enter minutes:");
 
             // get seconds from user
-            seconds = My_Dialogs.InputBox("Enter seconds:");
+            string seconds = My_Dialogs.InputBox("Enter seconds:");
 
             // calc answer
-            result = (Convert.ToInt32(hours) * 60 * 60) + (Convert.ToInt32(minutes) * 60) + Convert.ToInt32(seconds);
+            int result = (Convert.ToInt32(hours) * 60 * 60) + (Convert.ToInt32(minutes) * 60) + Convert.ToInt32(seconds);
 
             // display
             MessageBox.Show("Total in seconds: " + result);
@@ -50,62 +47,51 @@ namespace FirstTime
         private void btn_Calculator_Click(object sender, EventArgs e)
         {
             // enter a number to be converted to a float
-            string str_numberOne = My_Dialogs.InputBox("Enter a number:");
-            float float_numberOne;
-            while (!float.TryParse(str_numberOne, out float_numberOne))  // retry if a non float value is entered
+            string strNumberOne = My_Dialogs.InputBox("Enter a number:");
+            float floatNumberOne;
+            while (!float.TryParse(strNumberOne, out floatNumberOne))  // retry if a non float value is entered
             {
-                str_numberOne = My_Dialogs.InputBox("Enter a number:");
+                strNumberOne = My_Dialogs.InputBox("Enter a number:");
             }
 
             // enter an operator
-            string str_operation = My_Dialogs.InputBox("Enter an operation:");
+            string strOperation = My_Dialogs.InputBox("Enter an operation:");
             string[] operators = { "+", "-", "/", "*" };
-            while (!operators.Contains(str_operation)) {  // check if the operator is valid
-                str_operation = My_Dialogs.InputBox("Enter an operation:");  // try again
+            while (!operators.Contains(strOperation)) {  // check if the operator is valid
+                strOperation = My_Dialogs.InputBox("Enter an operation:");  // try again
             }
 
             // enter a number to be converted to a float
-            string str_numberTwo = My_Dialogs.InputBox("Enter a number:");
-            float float_numberTwo;
-            while (!float.TryParse(str_numberTwo, out float_numberTwo))  // retry if a non float value is entered
+            string strNumberTwo = My_Dialogs.InputBox("Enter a number:");
+            float floatNumberTwo;
+            while (!float.TryParse(strNumberTwo, out floatNumberTwo))  // retry if a non float value is entered
             {
-                str_numberTwo = My_Dialogs.InputBox("Enter a number:");
+                strNumberTwo = My_Dialogs.InputBox("Enter a number:");
             }
 
-            float float_result;
-            switch (str_operation)
+            float floatResult = strOperation switch
             {
-                case "+":
-                    float_result = float_numberOne + float_numberTwo;
-                    break;
-                case "-":
-                    float_result = float_numberOne - float_numberTwo;
-                    break;
-                case "*":
-                    float_result = float_numberOne * float_numberTwo;
-                    break;
-                case "/":
-                    float_result = float_numberOne / float_numberTwo;
-                    break;
-                default:
-                    float_result = 0;
-                    break;
-            }
+                "+" => floatNumberOne + floatNumberTwo,
+                "-" => floatNumberOne - floatNumberTwo,
+                "*" => floatNumberOne * floatNumberTwo,
+                "/" => floatNumberOne / floatNumberTwo,
+                _ => 0
+            };
 
-            MessageBox.Show("Result: " + float_result);
+            MessageBox.Show("Result: " + floatResult);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             const double pi = 3.141;
             int diameter = Convert.ToInt32(My_Dialogs.InputBox("Enter Pizza Diameter"));
-            double share = (double)pi * Math.Pow((0.5 * diameter), 2);
+            double share = pi * Math.Pow((0.5 * diameter), 2);
             MessageBox.Show($"3 sharing each get {share} sq inches");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double sqm = 3000;
+            const double sqm = 3000;
             double edgeSize = Math.Sqrt(sqm);
             MessageBox.Show("Side length: " + edgeSize);
         }
@@ -177,25 +163,23 @@ namespace FirstTime
         {
             int mark = Convert.ToInt32(My_Dialogs.InputBox("Enter a mark:"));
 
-            if (70 <= mark && mark <= 100)
+            switch (mark)
             {
-                MessageBox.Show("Distinction");
-            }
-            else if (60 <= mark && mark <= 69)
-            {
-                MessageBox.Show("Merit");
-            }
-            else if (40 <= mark && mark <= 59)
-            {
-                MessageBox.Show("Pass");
-            }
-            else if (0 <= mark && mark <= 39)
-            {
-                MessageBox.Show("Fail");
-            }
-            else
-            {
-                MessageBox.Show("Impossible Mark");
+                case >= 70 and <= 100:
+                    MessageBox.Show("Distinction");
+                    break;
+                case >= 60 and <= 69:
+                    MessageBox.Show("Merit");
+                    break;
+                case >= 40 and <= 59:
+                    MessageBox.Show("Pass");
+                    break;
+                case >= 0 and <= 39:
+                    MessageBox.Show("Fail");
+                    break;
+                default:
+                    MessageBox.Show("Impossible Mark");
+                    break;
             }
         }
 
@@ -290,9 +274,8 @@ namespace FirstTime
 
         private void PasswordLoop_Click(object sender, EventArgs e)
         {
-            String attempt;
             int incorrectCount = 0;
-            attempt = My_Dialogs.InputBox("Please enter the Password: ");
+            string attempt = My_Dialogs.InputBox("Please enter the Password: ");
             while (attempt != "basic")
             {
                 incorrectCount++;
@@ -304,29 +287,28 @@ namespace FirstTime
 
         private void SecondsCheck_Click(object sender, EventArgs e)
         {
-            string hours, minutes, seconds;
-            int result;
+            string hours, minutes;
             // get hours from user
-            int int_hours;
+            int intHours;
             do
             {
                 hours = My_Dialogs.InputBox("Enter hours:");
-                int_hours = Convert.ToInt32(hours);
-            } while (!(0 <= int_hours && int_hours <= 23));
+                intHours = Convert.ToInt32(hours);
+            } while (!(intHours is >= 0 and <= 23));
 
             // get minutes from user
-            int int_mins;
+            int intMinutes;
             do
             {
-                minutes = My_Dialogs.InputBox("Enter mins:");
-                int_mins = Convert.ToInt32(minutes);
-            } while (!(0 <= int_mins && int_mins <= 59));
+                minutes = My_Dialogs.InputBox("Enter minutes:");
+                intMinutes = Convert.ToInt32(minutes);
+            } while (intMinutes is not (>= 0 and <= 59));
 
             // get seconds from user
-            seconds = My_Dialogs.InputBox("Enter seconds:");
+            string seconds = My_Dialogs.InputBox("Enter seconds:");
 
             // calc answer
-            result = (Convert.ToInt32(hours) * 60 * 60) + (Convert.ToInt32(minutes) * 60) + Convert.ToInt32(seconds);
+            int result = (Convert.ToInt32(hours) * 60 * 60) + (Convert.ToInt32(minutes) * 60) + Convert.ToInt32(seconds);
 
             // display
             MessageBox.Show("Total in seconds: " + result);
