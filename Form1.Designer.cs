@@ -45,6 +45,8 @@
             this.CoffeeSizePrice = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CarExit = new System.Windows.Forms.Button();
+            this.CarEnter = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -64,10 +66,10 @@
             // 
             // btn_Hello
             // 
-            this.btn_Hello.Location = new System.Drawing.Point(56, 41);
-            this.btn_Hello.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Hello.Location = new System.Drawing.Point(50, 33);
+            this.btn_Hello.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Hello.Name = "btn_Hello";
-            this.btn_Hello.Size = new System.Drawing.Size(177, 65);
+            this.btn_Hello.Size = new System.Drawing.Size(157, 52);
             this.btn_Hello.TabIndex = 0;
             this.btn_Hello.Text = "Say Hello";
             this.btn_Hello.UseVisualStyleBackColor = true;
@@ -75,10 +77,10 @@
             // 
             // btn_Seconds
             // 
-            this.btn_Seconds.Location = new System.Drawing.Point(56, 135);
-            this.btn_Seconds.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Seconds.Location = new System.Drawing.Point(50, 108);
+            this.btn_Seconds.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Seconds.Name = "btn_Seconds";
-            this.btn_Seconds.Size = new System.Drawing.Size(177, 65);
+            this.btn_Seconds.Size = new System.Drawing.Size(157, 52);
             this.btn_Seconds.TabIndex = 1;
             this.btn_Seconds.Text = "Seconds";
             this.btn_Seconds.UseVisualStyleBackColor = true;
@@ -86,10 +88,10 @@
             // 
             // btn_Calculator
             // 
-            this.btn_Calculator.Location = new System.Drawing.Point(56, 232);
-            this.btn_Calculator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Calculator.Location = new System.Drawing.Point(50, 186);
+            this.btn_Calculator.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Calculator.Name = "btn_Calculator";
-            this.btn_Calculator.Size = new System.Drawing.Size(177, 65);
+            this.btn_Calculator.Size = new System.Drawing.Size(157, 52);
             this.btn_Calculator.TabIndex = 2;
             this.btn_Calculator.Text = "Calculator";
             this.btn_Calculator.UseVisualStyleBackColor = true;
@@ -97,10 +99,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(56, 331);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(50, 265);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 65);
+            this.button1.Size = new System.Drawing.Size(157, 52);
             this.button1.TabIndex = 3;
             this.button1.Text = "Pizza";
             this.button1.UseVisualStyleBackColor = true;
@@ -108,10 +110,9 @@
             // 
             // squareRoom
             // 
-            this.squareRoom.Location = new System.Drawing.Point(56, 436);
-            this.squareRoom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.squareRoom.Location = new System.Drawing.Point(50, 349);
             this.squareRoom.Name = "squareRoom";
-            this.squareRoom.Size = new System.Drawing.Size(177, 65);
+            this.squareRoom.Size = new System.Drawing.Size(157, 52);
             this.squareRoom.TabIndex = 4;
             this.squareRoom.Text = "Square Room";
             this.squareRoom.UseVisualStyleBackColor = true;
@@ -119,10 +120,9 @@
             // 
             // firstLastLetter
             // 
-            this.firstLastLetter.Location = new System.Drawing.Point(56, 529);
-            this.firstLastLetter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.firstLastLetter.Location = new System.Drawing.Point(50, 423);
             this.firstLastLetter.Name = "firstLastLetter";
-            this.firstLastLetter.Size = new System.Drawing.Size(177, 64);
+            this.firstLastLetter.Size = new System.Drawing.Size(157, 51);
             this.firstLastLetter.TabIndex = 5;
             this.firstLastLetter.Text = "First and Last Letter";
             this.firstLastLetter.UseVisualStyleBackColor = true;
@@ -130,10 +130,9 @@
             // 
             // sqrt
             // 
-            this.sqrt.Location = new System.Drawing.Point(260, 41);
-            this.sqrt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sqrt.Location = new System.Drawing.Point(231, 33);
             this.sqrt.Name = "sqrt";
-            this.sqrt.Size = new System.Drawing.Size(177, 65);
+            this.sqrt.Size = new System.Drawing.Size(157, 52);
             this.sqrt.TabIndex = 6;
             this.sqrt.Text = "Square Root";
             this.sqrt.UseVisualStyleBackColor = true;
@@ -141,10 +140,9 @@
             // 
             // calcArea
             // 
-            this.calcArea.Location = new System.Drawing.Point(260, 135);
-            this.calcArea.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.calcArea.Location = new System.Drawing.Point(231, 108);
             this.calcArea.Name = "calcArea";
-            this.calcArea.Size = new System.Drawing.Size(177, 65);
+            this.calcArea.Size = new System.Drawing.Size(157, 52);
             this.calcArea.TabIndex = 7;
             this.calcArea.Text = "Area Calculate";
             this.calcArea.UseVisualStyleBackColor = true;
@@ -152,10 +150,9 @@
             // 
             // SmallerNumber
             // 
-            this.SmallerNumber.Location = new System.Drawing.Point(260, 232);
-            this.SmallerNumber.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SmallerNumber.Location = new System.Drawing.Point(231, 186);
             this.SmallerNumber.Name = "SmallerNumber";
-            this.SmallerNumber.Size = new System.Drawing.Size(177, 65);
+            this.SmallerNumber.Size = new System.Drawing.Size(157, 52);
             this.SmallerNumber.TabIndex = 8;
             this.SmallerNumber.Text = "Smaller Number";
             this.SmallerNumber.UseVisualStyleBackColor = true;
@@ -163,10 +160,9 @@
             // 
             // LargestNumThree
             // 
-            this.LargestNumThree.Location = new System.Drawing.Point(260, 331);
-            this.LargestNumThree.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LargestNumThree.Location = new System.Drawing.Point(231, 265);
             this.LargestNumThree.Name = "LargestNumThree";
-            this.LargestNumThree.Size = new System.Drawing.Size(177, 65);
+            this.LargestNumThree.Size = new System.Drawing.Size(157, 52);
             this.LargestNumThree.TabIndex = 9;
             this.LargestNumThree.Text = "Largest of 3";
             this.LargestNumThree.UseVisualStyleBackColor = true;
@@ -174,10 +170,9 @@
             // 
             // MarkToGrade
             // 
-            this.MarkToGrade.Location = new System.Drawing.Point(260, 436);
-            this.MarkToGrade.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MarkToGrade.Location = new System.Drawing.Point(231, 349);
             this.MarkToGrade.Name = "MarkToGrade";
-            this.MarkToGrade.Size = new System.Drawing.Size(177, 65);
+            this.MarkToGrade.Size = new System.Drawing.Size(157, 52);
             this.MarkToGrade.TabIndex = 10;
             this.MarkToGrade.Text = "Mark to Grade";
             this.MarkToGrade.UseVisualStyleBackColor = true;
@@ -185,10 +180,9 @@
             // 
             // ShapeArea
             // 
-            this.ShapeArea.Location = new System.Drawing.Point(260, 528);
-            this.ShapeArea.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ShapeArea.Location = new System.Drawing.Point(231, 422);
             this.ShapeArea.Name = "ShapeArea";
-            this.ShapeArea.Size = new System.Drawing.Size(177, 65);
+            this.ShapeArea.Size = new System.Drawing.Size(157, 52);
             this.ShapeArea.TabIndex = 11;
             this.ShapeArea.Text = "Area of Shape";
             this.ShapeArea.UseVisualStyleBackColor = true;
@@ -196,10 +190,9 @@
             // 
             // IsInBox
             // 
-            this.IsInBox.Location = new System.Drawing.Point(56, 631);
-            this.IsInBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.IsInBox.Location = new System.Drawing.Point(50, 505);
             this.IsInBox.Name = "IsInBox";
-            this.IsInBox.Size = new System.Drawing.Size(177, 64);
+            this.IsInBox.Size = new System.Drawing.Size(157, 51);
             this.IsInBox.TabIndex = 12;
             this.IsInBox.Text = "Is in Box";
             this.IsInBox.UseVisualStyleBackColor = true;
@@ -207,10 +200,9 @@
             // 
             // LetterInName
             // 
-            this.LetterInName.Location = new System.Drawing.Point(260, 631);
-            this.LetterInName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LetterInName.Location = new System.Drawing.Point(231, 505);
             this.LetterInName.Name = "LetterInName";
-            this.LetterInName.Size = new System.Drawing.Size(177, 64);
+            this.LetterInName.Size = new System.Drawing.Size(157, 51);
             this.LetterInName.TabIndex = 13;
             this.LetterInName.Text = "Letter in Name";
             this.LetterInName.UseVisualStyleBackColor = true;
@@ -218,10 +210,9 @@
             // 
             // CoffeeSizePrice
             // 
-            this.CoffeeSizePrice.Location = new System.Drawing.Point(56, 735);
-            this.CoffeeSizePrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CoffeeSizePrice.Location = new System.Drawing.Point(50, 588);
             this.CoffeeSizePrice.Name = "CoffeeSizePrice";
-            this.CoffeeSizePrice.Size = new System.Drawing.Size(177, 64);
+            this.CoffeeSizePrice.Size = new System.Drawing.Size(157, 51);
             this.CoffeeSizePrice.TabIndex = 14;
             this.CoffeeSizePrice.Text = "Coffee Size Price";
             this.CoffeeSizePrice.UseVisualStyleBackColor = true;
@@ -245,17 +236,17 @@
             this.groupBox1.Controls.Add(this.btn_Seconds);
             this.groupBox1.Controls.Add(this.btn_Hello);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(33, 52);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Location = new System.Drawing.Point(29, 42);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(514, 812);
+            this.groupBox1.Size = new System.Drawing.Size(457, 650);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Week 1";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.CarExit);
+            this.groupBox2.Controls.Add(this.CarEnter);
             this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.button9);
             this.groupBox2.Controls.Add(this.button8);
@@ -270,21 +261,38 @@
             this.groupBox2.Controls.Add(this.SecondsCheck);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(570, 48);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Location = new System.Drawing.Point(507, 38);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(449, 816);
+            this.groupBox2.Size = new System.Drawing.Size(399, 653);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Week 2";
             // 
+            // CarExit
+            // 
+            this.CarExit.Location = new System.Drawing.Point(214, 426);
+            this.CarExit.Name = "CarExit";
+            this.CarExit.Size = new System.Drawing.Size(153, 51);
+            this.CarExit.TabIndex = 14;
+            this.CarExit.Text = "Car Exits Parking";
+            this.CarExit.UseVisualStyleBackColor = true;
+            this.CarExit.Click += new System.EventHandler(this.CarExit_Click);
+            // 
+            // CarEnter
+            // 
+            this.CarEnter.Location = new System.Drawing.Point(214, 352);
+            this.CarEnter.Name = "CarEnter";
+            this.CarEnter.Size = new System.Drawing.Size(153, 51);
+            this.CarEnter.TabIndex = 13;
+            this.CarEnter.Text = "Car Enters Parking";
+            this.CarEnter.UseVisualStyleBackColor = true;
+            this.CarEnter.Click += new System.EventHandler(this.CarEnter_Click);
+            // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(241, 335);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button10.Location = new System.Drawing.Point(214, 268);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(172, 64);
+            this.button10.Size = new System.Drawing.Size(153, 51);
             this.button10.TabIndex = 12;
             this.button10.Text = "Smallest of 3";
             this.button10.UseVisualStyleBackColor = true;
@@ -292,10 +300,9 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(241, 236);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button9.Location = new System.Drawing.Point(214, 189);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(172, 64);
+            this.button9.Size = new System.Drawing.Size(153, 51);
             this.button9.TabIndex = 11;
             this.button9.Text = "Smaller Number";
             this.button9.UseVisualStyleBackColor = true;
@@ -303,10 +310,9 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(241, 140);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button8.Location = new System.Drawing.Point(214, 112);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(172, 64);
+            this.button8.Size = new System.Drawing.Size(153, 51);
             this.button8.TabIndex = 10;
             this.button8.Text = "Total Marks";
             this.button8.UseVisualStyleBackColor = true;
@@ -314,10 +320,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(241, 46);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button7.Location = new System.Drawing.Point(214, 37);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(172, 64);
+            this.button7.Size = new System.Drawing.Size(153, 51);
             this.button7.TabIndex = 9;
             this.button7.Text = "Read Value Double";
             this.button7.UseVisualStyleBackColor = true;
@@ -325,10 +330,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(31, 739);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button6.Location = new System.Drawing.Point(28, 591);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(172, 64);
+            this.button6.Size = new System.Drawing.Size(153, 51);
             this.button6.TabIndex = 8;
             this.button6.Text = "Rectangle Triangle Method";
             this.button6.UseVisualStyleBackColor = true;
@@ -336,10 +340,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(30, 635);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button5.Location = new System.Drawing.Point(27, 508);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(172, 64);
+            this.button5.Size = new System.Drawing.Size(153, 51);
             this.button5.TabIndex = 7;
             this.button5.Text = "Mins to Hours Method";
             this.button5.UseVisualStyleBackColor = true;
@@ -347,10 +350,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(30, 533);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button4.Location = new System.Drawing.Point(27, 426);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(172, 64);
+            this.button4.Size = new System.Drawing.Size(153, 51);
             this.button4.TabIndex = 6;
             this.button4.Text = "Mins Seconds Method";
             this.button4.UseVisualStyleBackColor = true;
@@ -358,10 +360,9 @@
             // 
             // MethodsButton
             // 
-            this.MethodsButton.Location = new System.Drawing.Point(30, 440);
-            this.MethodsButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MethodsButton.Location = new System.Drawing.Point(27, 352);
             this.MethodsButton.Name = "MethodsButton";
-            this.MethodsButton.Size = new System.Drawing.Size(172, 64);
+            this.MethodsButton.Size = new System.Drawing.Size(153, 51);
             this.MethodsButton.TabIndex = 5;
             this.MethodsButton.Text = "Methods";
             this.MethodsButton.UseVisualStyleBackColor = true;
@@ -369,10 +370,9 @@
             // 
             // LowestOverdraft
             // 
-            this.LowestOverdraft.Location = new System.Drawing.Point(30, 335);
-            this.LowestOverdraft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LowestOverdraft.Location = new System.Drawing.Point(27, 268);
             this.LowestOverdraft.Name = "LowestOverdraft";
-            this.LowestOverdraft.Size = new System.Drawing.Size(174, 64);
+            this.LowestOverdraft.Size = new System.Drawing.Size(155, 51);
             this.LowestOverdraft.TabIndex = 4;
             this.LowestOverdraft.Text = "Lowest Overdraft";
             this.LowestOverdraft.UseVisualStyleBackColor = true;
@@ -380,10 +380,9 @@
             // 
             // TenMarks
             // 
-            this.TenMarks.Location = new System.Drawing.Point(32, 236);
-            this.TenMarks.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TenMarks.Location = new System.Drawing.Point(28, 189);
             this.TenMarks.Name = "TenMarks";
-            this.TenMarks.Size = new System.Drawing.Size(174, 64);
+            this.TenMarks.Size = new System.Drawing.Size(155, 51);
             this.TenMarks.TabIndex = 3;
             this.TenMarks.Text = "Ten Marks";
             this.TenMarks.UseVisualStyleBackColor = true;
@@ -391,10 +390,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(30, 139);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Location = new System.Drawing.Point(27, 111);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(174, 64);
+            this.button3.Size = new System.Drawing.Size(155, 51);
             this.button3.TabIndex = 2;
             this.button3.Text = "Square While";
             this.button3.UseVisualStyleBackColor = true;
@@ -402,10 +400,9 @@
             // 
             // SecondsCheck
             // 
-            this.SecondsCheck.Location = new System.Drawing.Point(32, 140);
-            this.SecondsCheck.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SecondsCheck.Location = new System.Drawing.Point(28, 112);
             this.SecondsCheck.Name = "SecondsCheck";
-            this.SecondsCheck.Size = new System.Drawing.Size(174, 64);
+            this.SecondsCheck.Size = new System.Drawing.Size(155, 51);
             this.SecondsCheck.TabIndex = 1;
             this.SecondsCheck.Text = "Seconds Check";
             this.SecondsCheck.UseVisualStyleBackColor = true;
@@ -413,10 +410,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(31, 45);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Location = new System.Drawing.Point(28, 36);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 65);
+            this.button2.Size = new System.Drawing.Size(157, 52);
             this.button2.TabIndex = 0;
             this.button2.Text = "Password Loop";
             this.button2.UseVisualStyleBackColor = true;
@@ -424,18 +420,21 @@
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 945);
+            this.ClientSize = new System.Drawing.Size(1067, 756);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainWindow";
             this.Text = "First App";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button CarEnter;
+        private System.Windows.Forms.Button CarExit;
 
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;

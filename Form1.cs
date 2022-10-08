@@ -524,5 +524,24 @@ namespace FirstTime
         {
             return GetSmallerInt(GetSmallerInt(num1, num2), num3);
         }
+
+        private int _numberOfCars = 3;
+
+        private void CarEnter_Click(object sender, EventArgs e)
+        {
+            if (_numberOfCars >= 10)
+            {
+                MessageBox.Show("There are no spaces available!");
+                return;
+            }
+            _numberOfCars++;
+            MessageBox.Show($"There are {10 - _numberOfCars} spaces remaining.");
+        }
+
+        private void CarExit_Click(object sender, EventArgs e)
+        {
+            _numberOfCars--;
+            MessageBox.Show($"There are {10 - _numberOfCars} spaces remaining.");
+        }
     }
 }
